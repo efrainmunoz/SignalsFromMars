@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_story"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.efrainmunoz.interactivestory.ui.StoryActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/page0"
+        android:layout_alignParentTop="true"
+        android:id="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true" />
+
+    <TextView
+        android:text="You continue your course to Earth. Two days later, you receive a transmission from HQ saying that they have detected some sort of anomaly on the surface of Mars near an abandoned rover. They ask you to investigate, but ultimately the decision is yours because your mission has already run much longer than planned and supplies are low."
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/storyImageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/storyTextView"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp"
+        android:paddingTop="15dp"
+        android:lineSpacingExtra="8sp" />
+
+    <Button
+        android:text="Stop and investigate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/choicebutton2" />
+
+    <Button
+        android:text="Continue home to earth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/choicebutton2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/choiceButton1" />
+</RelativeLayout>
